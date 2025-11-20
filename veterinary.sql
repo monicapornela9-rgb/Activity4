@@ -177,4 +177,11 @@ JOIN animals an ON a.animalid = an.animalid
 JOIN owners o ON an.ownerid = o.ownerid
 WHERE o.ofirstname = 'Angel';
 
+SELECT an.name AS animal_with_most_appointments
+FROM appointments a
+JOIN animals an ON a.animalid = an.animalid
+GROUP BY an.animalid, an.name
+ORDER BY COUNT(a.appointid) DESC
+LIMIT 1;
+
 
