@@ -58,3 +58,16 @@ CREATE TABLE medicalrecords (
     FOREIGN KEY (animalid) REFERENCES animals(animalid),
     FOREIGN KEY (doctorid) REFERENCES doctors(doctorid)
 );
+
+INSERT INTO owners (ownerid, ofirstname, olastname, address, phone, email)
+VALUES
+(1, 'Monica', 'Pornela', 'Bugtong na Pulo', '09637958369', 'monicapornela09@gmail.com'),
+(2, 'Lawrence', 'Mindanao', 'Quezon', '09917528407', 'lawrencem@gmail.com'),
+(3, 'Anne', 'Porta', 'Pagbilao', '09637958876', 'anneporta09@gmail.com'),
+(4, 'Gee-Anne', 'Lescano', 'Sico', '09123458369', 'geeanne05@gmail.com'),
+(5, 'Baeverly', 'Eroles', 'San Jose', '09123456789', 'beveroles99@gmail.com'),
+(6, 'JhonRay', 'Tennorio', 'Lipa City', '09987654321', 'jhonray123@gmail.com'),
+(7, 'Camille', 'Hernandez', 'Pinagkawitan', '09453672821', 'camilleher12@gmail.com'),
+(8, 'Rona', 'Silva', 'Tambo', '09453672987', 'ronsilva@gmail.com'),
+(9, 'Angel', 'Dinglasan', 'Sampaguita', '09123472821', 'angeldinglasan78@gmail.com'),
+(10, 'Cathrine', 'Balmes', 'Antipolo', '09453676785', 'cathrineblams2@gmail.com');
